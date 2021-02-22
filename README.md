@@ -2,7 +2,7 @@
 
 This repo contains example services and functions for running with Jetpack.
 
-This repo is a work in progress.
+This repo is a work in progress. Currently it only contains a Flask "Hello World" example. 
 
 ## Deploying Examples:
 
