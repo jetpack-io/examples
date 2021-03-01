@@ -2,3 +2,4 @@
 .DS_STORE
 .python-version
 .jetpack.json
+flask-hello/__pycache__/
