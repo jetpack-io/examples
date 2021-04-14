@@ -2,7 +2,8 @@ pipelines:
   branches: 
       main: 
           - step:
-                  name: release
+                  name: Deploy
+                  image: atlassian/default-image:2
                   script:
                       - curl -fsSL https://get.jetpack.io | bash -s -- --yes
-                      - INTERNAL=1 jetpack release -w $PROD_WORKSPACE -s api.dev.jetpack.io
+                      - jetpack release -w 9eb6ddb9-7eda-4727-acbd-b98cc4d74ad0
