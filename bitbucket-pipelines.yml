@@ -2,7 +2,7 @@ pipelines:
   branches: 
       main: 
           - step:
-                  name: Deploy
+                  name: deploy
                   image: jetpackio/cli:0.1.0
                   script:
                       - jetpack release -w 9eb6ddb9-7eda-4727-acbd-b98cc4d74ad0
