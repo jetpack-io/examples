@@ -5,4 +5,4 @@ pipelines:
                   name: deploy
                   script:
                       - curl -fsSL https://get.jetpack.io | bash -s -- --yes
-                      - jetpack release -w $PROD_WORKSPACE
+                      - jetpack release -w $PROD_WORKSPACE -s api.dev.jetpack.io
