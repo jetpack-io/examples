@@ -2,7 +2,7 @@ pipelines:
   branches: 
       main: 
           - step:
-                  name: deploy
+                  name: release
                   script:
                       - curl -fsSL https://get.jetpack.io | bash -s -- --yes
                       - jetpack release -w $PROD_WORKSPACE
