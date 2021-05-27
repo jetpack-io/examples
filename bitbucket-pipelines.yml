@@ -5,4 +5,4 @@ pipelines:
                   name: release
                   script:
                       - curl -fsSL https://get.jetpack.io | bash -s -- --yes
-                      - jetpack release -w $PROD_WORKSPACE
+                      - INTERNAL=1 jetpack release -w $PROD_WORKSPACE -s api.dev.jetpack.io
