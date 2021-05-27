@@ -3,6 +3,6 @@ pipelines:
       main: 
           - step:
                   name: deploy
-                  image: jetpackio/cli:0.1.0
                   script:
+                      - curl -fsSL https://get.jetpack.io | bash -s -- --yes
                       - jetpack release -w $PROD_WORKSPACE
