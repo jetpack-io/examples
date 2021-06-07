@@ -3,3 +3,5 @@
 .python-version
 .jetpack.json
 flask-hello/__pycache__/
+jetpack.project
+.env

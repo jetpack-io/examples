@@ -1,6 +1,7 @@
 from main import app
-import os
+from os import environ
+
 
 @app.route('/')
 def hello_world():
-    return 'Hello, World! You are currently in {0}'.format(os.environ.get("FLASK_ENV"))
+    return 'Hello! You are currently in {0}'.format(environ.get("FLASK_ENV"))
